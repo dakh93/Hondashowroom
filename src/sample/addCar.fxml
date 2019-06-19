@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" styleClass="body" stylesheets="@background.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCarController">
+   <children>
+      <Label layoutX="57.0" layoutY="54.0" prefHeight="42.0" prefWidth="42.0" text="Model:" />
+      <Label layoutX="57.0" layoutY="136.0" prefHeight="42.0" prefWidth="42.0" text="Year:" />
+      <Label layoutX="38.0" layoutY="220.0" prefHeight="42.0" prefWidth="80.0" text="Engine Model:" />
+      <Label layoutX="341.0" layoutY="55.0" prefHeight="42.0" prefWidth="98.0" text="Number of doors:" />
+      <Label layoutX="341.0" layoutY="342.0" prefHeight="42.0" prefWidth="80.0" text="Horse powers:" />
+      <Label layoutX="341.0" layoutY="136.0" prefHeight="42.0" prefWidth="56.0" text="Torque:" />
+      <Label layoutX="30.0" layoutY="342.0" prefHeight="42.0" prefWidth="138.0" text="Number of cylinders:" />
+      <Label layoutX="341.0" layoutY="283.0" prefHeight="42.0" prefWidth="72.0" text="Wheel Size:" />
+      <Label layoutX="341.0" layoutY="220.0" prefHeight="42.0" prefWidth="50.0" text="Weight:" textFill="WHITE" />
+      <Label layoutX="38.0" layoutY="283.0" prefHeight="42.0" prefWidth="80.0" text="Gasoline type:" />
+      <ComboBox fx:id="modelChoice" layoutX="152.0" layoutY="63.0" prefWidth="150.0" />
+      <ComboBox fx:id="yearChoice" layoutX="152.0" layoutY="145.0" prefWidth="150.0" />
+      <ComboBox fx:id="gasolineChoice" layoutX="152.0" layoutY="292.0" prefWidth="150.0" />
+      <TextField fx:id="engineModel" layoutX="153.0" layoutY="229.0" />
+      <TextField fx:id="cylindersNum" layoutX="153.0" layoutY="351.0" />
+      <TextField fx:id="doorsNum" layoutX="450.0" layoutY="64.0" />
+      <TextField fx:id="torque" layoutX="450.0" layoutY="145.0" />
+      <TextField fx:id="weight" layoutX="450.0" layoutY="229.0" />
+      <TextField fx:id="horsePowers" layoutX="450.0" layoutY="351.0" />
+      <ComboBox fx:id="wheelSizeChoice" layoutX="450.0" layoutY="292.0" prefWidth="150.0" />
+      <Button fx:id="addToDB_btn" layoutX="227.0" layoutY="508.0" mnemonicParsing="false" onAction="#buttonAddToDB" prefHeight="90.0" prefWidth="240.0" text="Save ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="goBack_btn" layoutX="38.0" layoutY="541.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="&lt;- Go Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="colorBox" layoutX="450.0" layoutY="412.0" />
+      <Label layoutX="367.0" layoutY="416.0" text="Color" />
+   </children>
+</AnchorPane>
